@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Big At Heart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="createnew.css">
+    <script src="createnew.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-left"><img src="../images/big at heart logo.png" class="logo"></div>
+        <div class="header-right">
+            <p>Admin</p>
+        </div>
+        <div class="slider">
+            <span class="activity">Activity</span>
+            <a href="/admin/generate" style="text-decoration: none; color:black" class="generate">Generate</a>
+        </div>
+    </header>
+    <main>
+        <div class="activities-header">Activities</div>
+        <div class="activity-status">
+            <div class="right">
+                <a href="/admin/activity/completed" style="text-decoration: none; color:rgba(5, 25, 45, 0.2)">
+                    <h1 class="completed">Completed</h1>
+                </a>
+
+            </div>
+            <div class="middle">
+                <a href="/admin/activity/upcoming" style="text-decoration: none; color:rgba(5, 25, 45, 0.2)">
+                    <h1 class="upcoming">Upcoming</h1>
+                </a>
+
+            </div>
+            <div class="left">
+                <a href="/admin/activity/ongoing" style="text-decoration: none; color:rgba(5, 25, 45, 0.2)">
+                    <h1 class="ongoing">Ongoing</h1>
+                </a>
+
+            </div>
+            <div class="new">
+                <h1 class="create-new">Create new</h1>
+            </div>
+        </div>
+
+        <body>
+            <form name="myForm" onsubmit="" method="post" enctype="multipart/form-data">
+                <div class="eventAddDiv">
+                    <div class="new-event">Add new event</div>
+                    <div class="beneficiaryName">
+                        <p>Name of Beneficiary:</p>
+                        <select name="beneficiary" class="input">
+                            <option value="NIL">--Choose Option--</option>
+                            <option value="migrantGrp">Migrant Workers</option>
+                            <option value="seniorGrp">Senior Citizens</option>
+                            <option value="disabledGrp">Disabled People</option>
+                        </select>
+                        <div class="errorNotice" id="errB"></div>
+                    </div>
+
+                    <div class="eventName">
+                        <p>Name of Event:</p>
+                        <input placeholder="Your event name" class="input" name="eventName">
+                        <div class="errorNotice" id="errEN"></div>
+                    </div>
+
+                    <div class="location">
+                        <p>Location:</p>
+                        <input placeholder="Location of event" class="input" name="location">
+                        <div class="errorNotice" id="errL"></div>
+                    </div>
+
+                    <div class="date">
+                        <p>Starting Date:</p>
+                        <input placeholder="Date of event" class="input" type="date" name="date">
+                        <div class="errorNotice" id="errD"></div>
+                    </div>
+
+                    <div class="timeStart">
+                        <p>Starting Time:</p>
+                        <input placeholder="Starting time of event" class="input" type ="time" name="startTime">
+                        <div class="errorNotice" id="errST"></div>
+                    </div>
+
+                    <div class="timeEnd">
+                        <p>Ending Time:</p>
+                        <input placeholder="Ending time of event" class="input" type ="time" name="endTime">
+                        <div class="errorNotice" id="errET"></div>
+                    </div>
+
+                    <div class="eventImage">
+                        <p>Insert an event image:</p>
+                        <input placeholder="Select file" class="file-input" type="file" name="uploaded_file" accept=".png, .jpg, .jpeg">
+                        <div class="errorNotice" id="file"></div>
+                    </div>
+
+                    <div class="loginButtons">
+                        <a href="../admin/activity/completed">
+                            <button>Submit</button>
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </body>
+    </main>
+</body>

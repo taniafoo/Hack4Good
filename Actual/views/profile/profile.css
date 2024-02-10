@@ -1,0 +1,240 @@
+html {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    font-family: Noto serif;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(247, 244, 245);
+    color-scheme: light;
+    font-family: Noto serif;
+}
+
+main {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    max-width: 1300px;
+    color: black;
+}
+
+p{
+    font-family: Noto Serif;
+    margin: 0px;
+    width: 200px;
+}
+.headerLeft img {
+    width: 100px;
+}
+
+.login img {
+    width: 30px;
+    object-fit: contain;
+}
+.searchbutton img {
+    width: 20px;
+}
+.headerLeft {
+    text-align: left;
+    padding: 10px 20px 10px 20px;
+    width:130px;
+}
+.search {
+    width: 400px;
+}
+header,
+.slider,
+.search{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1;
+    justify-content: center;
+    background-color: white;
+}
+.slider {
+    border-style: solid;
+    border-color: rgb(239, 239, 245);
+    display:flex;
+    justify-content: space-between;
+    border-radius: 12px;
+    font-size: 17px;
+    background-color: rgb(239, 239, 245);
+    width:173px;
+    height: 30px;
+}
+
+.home:hover{
+    background-color:rgb(200, 200, 200);
+    cursor: pointer;
+    border-radius:12px;
+}
+
+.profile-slider:hover{
+    cursor:pointer;
+}
+
+.profile-slider{
+    width: 102px;
+    background-color: #051938;
+    color: white;
+    border-style:solid;
+    border-radius:12px;
+    text-align: center;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+
+.home{
+    width: 60px;
+    text-align:center;
+    margin-right: 7px;
+}
+
+header{
+    justify-content: space-between;
+    /*background-color: rgb(195, 117, 117);*/
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    box-shadow: 0px 1px 5px rgb(162, 167, 170);
+    font-family: Noto serif;
+}
+.search {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.profilepic{
+    height: 50px;
+    margin: 0px;
+    display: flex;
+    justify-content: column;
+}
+
+.username{
+    text-align: center;
+    font-size: 12px;
+}
+.searchbar{
+    height: 40px;
+    width: 100%;
+    min-width: 200px;
+    max-width: 350px;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 2px solid rgb(195, 117, 117);
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color: rgb(247, 244, 245);
+    font-family: 'Roboto', sans-serif;
+}
+.searchbutton{
+    margin-right: 30px;
+    padding: 0 12px 0 12px;
+    height: 46px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: rgb(254, 152, 105);
+    border: 2px solid rgb(195, 117, 117);
+    display: flex;
+    border-left: none;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profHeader img {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.pic{
+    display:inline-block;
+}
+
+.info{
+    display: inline-block;
+    width: 200px;
+}
+
+.priInfo{
+    display:none;
+}
+
+.info p{
+    margin-bottom: 5px;
+}
+
+.profHeader {
+    box-shadow: 0px 1px 5px rgb(162, 167, 170);
+    background-color: rgb(219, 179, 179);
+    width: 600px;
+    padding: 25px;
+    height: contain;
+
+}
+.tabs {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+.tabs button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-family: Noto serif;
+  }
+.tabs button:hover {
+    background-color: #ddd;
+}
+.tabs button.active {
+    background-color: #ccc;
+  }
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+.amend,
+.display{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+.amend {
+    margin-top: 10px;
+}
+.amend button {
+    margin-left: 8px;
+}
+.poster img {
+    width: 200px;
+}
+.eventDetails{
+    margin-left: 50px;
+}
+.attendance {
+    margin-bottom: 10px;
+}
+.display {
+    row-gap: 10px;
+}

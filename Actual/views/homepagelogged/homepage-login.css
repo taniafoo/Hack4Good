@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    background-color: rgb(247, 244, 245);
+    color-scheme: light;
+    font-family: Roboto, Arial;
+}
+main {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    max-width: 1100px;
+    color: black;
+}
+
+.event-div{
+    font-size: 55px;
+    font-family: Noto serif;
+    margin: 0px;
+    align:top;
+}
+
+p{
+    font-family: Noto Serif;
+    margin: 0px;
+}
+.headerLeft img {
+    width: 100px;
+}
+
+.login img {
+    width: 30px;
+    object-fit: contain;
+}
+.searchbutton img {
+    width: 20px;
+}
+.headerLeft {
+    text-align: left;
+    padding: 10px 20px 10px 20px;
+    width:130px;
+}
+.search {
+    width: 400px;
+}
+header,
+.slider,
+.search{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1;
+    justify-content: center;
+    background-color: white;
+}
+.slider {
+    border-style: solid;
+    border-color: rgb(239, 239, 245);
+    display:flex;
+    justify-content: space-between;
+    border-radius: 12px;
+    font-size: 17px;
+    background-color: rgb(239, 239, 245);
+    width:173px;
+    height: 30px;
+}
+
+.about-us:hover,
+.profile-slider:hover{
+    background-color:rgb(200, 200, 200);
+    cursor: pointer;
+    border-radius:12px;
+}
+
+.home:hover{
+    cursor:pointer;
+}
+
+.home{
+    width: 60px;
+    margin-right: 7px;
+    background-color: #051938;
+    color: white;
+    border-style:solid;
+    border-radius:12px;
+    text-align: center;
+}
+
+.about-us{
+    margin-right: 7px;
+    width: 77px;
+    text-align:center;
+}
+
+.profile-slider{
+    width: 102px;
+    text-align:center;
+}
+
+header{
+    justify-content: space-between;
+    /*background-color: rgb(195, 117, 117);*/
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    box-shadow: 0px 1px 5px rgb(162, 167, 170);
+    font-family: Noto serif;
+}
+.search {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.profilepic{
+    height: 50px;
+    margin: 0px;
+    display: flex;
+    justify-content: column;
+}
+
+.username{
+    text-align: center;
+    font-size: 12px;
+}
+.searchbar{
+    height: 40px;
+    width: 100%;
+    min-width: 200px;
+    max-width: 350px;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 2px solid rgb(195, 117, 117);
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color: rgb(247, 244, 245);
+    font-family: 'Roboto', sans-serif;
+}
+.searchbutton{
+    margin-right: 30px;
+    padding: 0 12px 0 12px;
+    height: 46px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: rgb(254, 152, 105);
+    border: 2px solid rgb(195, 117, 117);
+    display: flex;
+    border-left: none;
+    flex-direction: row;
+    align-items: center;
+}
+a { 
+    text-decoration: none; 
+    color: black;
+}
+.log{
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.eventDetails{
+    text-align: center;
+}
+
+.event-name{
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.date,
+.location {
+    margin-bottom: 3px;
+}
+
+
+.poster img{
+    width: 796px;
+    object-fit: contain;
+}
+.poster {
+    text-align: center;
+}
+.events {
+    margin-bottom: 20px;
+    border: 2px solid rgb(195, 117, 117);
+    transition: box-shadow 0.15s;
+    background-color: white;
+}
+
+.events:hover{
+    box-shadow: -1px 3px 3px rgb(103, 106, 108);
+}
+.mainHomepage {
+    margin-left: 300px;
+    z-index: 0;
+}
+.filter {
+    position: absolute;
+    padding: 10px;
+    top: 180px;
+    border: 2px solid black;
+    background-color: white;
+    align: top;
+}
+
+.beneficiaryCats {
+    font-family: Noto Serif;
+}

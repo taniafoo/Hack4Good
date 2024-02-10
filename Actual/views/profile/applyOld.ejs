@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Big At Heart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="apply.css">
+</head>
+
+<body>
+    <header>
+        <div class="headerLeft">
+            <img src="../images/big at heart logo.png">
+        </div>
+        <div class="slider">
+            <span class="home">Home</span>
+            <span class="profile-slider">Your profile</span>
+        </div>
+        <div class="search">
+            <input placeholder="Search" class="searchbar">
+            <button class="searchbutton">
+                <img src="../images/search-icon copy.png">
+            </button>
+        </div>
+
+        <div>
+            <div class="profilepic"><img src="../images/profile-icon-png-898.png"></div>
+            <div class="username"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="event-div">Apply now</div>
+        <form name="myForm" onsubmit="return validateForm()" method="post">
+            <div class="eventAddDiv">
+                <select name="beneficiary" class="input"></select>
+
+                <input type="hidden" id="rows" value="<%=locals.rows%>">
+
+                <div class="apply-button">
+                    <a href="">
+                        <button class="applyButton">Apply now</button>
+                    </a>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <input type="hidden" id="profile" value="<%=locals.profile%>">
+</body>
+
+<script>
+    document.querySelector(".input").innerHTML = document.querySelector("#rows").value;
+</script>

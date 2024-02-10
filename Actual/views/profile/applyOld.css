@@ -1,0 +1,235 @@
+body {
+    margin: 0;
+    background-color: rgb(247, 244, 245);
+    color-scheme: light;
+    font-family: Roboto, Arial;
+}
+main {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    max-width: 1300px;
+    color: black;
+}
+
+.eventAddDiv{
+    background-color: white;
+    font-family: Noto serif;
+    padding: 25px;
+    border-radius: 20px;
+    width: 500px;
+    height: contain;
+    margin-left: 387px;
+    border: 1px solid rgb(219, 179, 179);
+}
+
+.input{
+    margin-bottom: 30px;
+    margin-top: 5px;
+    width: 100%;
+    height: 23px;
+    display: block;
+}
+
+.event-div{
+    font-size: 55px;
+    font-family: Noto serif;
+    margin: 0px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid rgba(5, 25, 45, 0.2);
+    padding-bottom: 2px;
+}
+
+p{
+    font-family: Noto Serif;
+    margin: 0px;
+    display: inline-block;
+}
+.headerLeft img {
+    width: 100px;
+}
+
+.login img {
+    width: 30px;
+    object-fit: contain;
+}
+.searchbutton img {
+    width: 20px;
+}
+.headerLeft {
+    text-align: left;
+    padding: 10px 20px 10px 20px;
+    width:130px;
+}
+.search {
+    width: 400px;
+}
+header,
+.slider,
+.search{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1;
+    justify-content: center;
+    background-color: white;
+}
+.slider {
+    border-style: solid;
+    border-color: rgb(239, 239, 245);
+    display:flex;
+    justify-content: space-between;
+    border-radius: 12px;
+    font-size: 17px;
+    background-color: rgb(239, 239, 245);
+    width:173px;
+    height: 30px;
+}
+
+.profile-slider:hover{
+    background-color:rgb(200, 200, 200);
+    cursor: pointer;
+    border-radius:12px;
+}
+
+.home:hover{
+    cursor:pointer;
+}
+
+.home{
+    width: 60px;
+    margin-right: 7px;
+    background-color: #051938;
+    color: white;
+    border-style:solid;
+    border-radius:12px;
+    text-align: center;
+}
+
+.about-us{
+    margin-right: 7px;
+    width: 77px;
+    text-align:center;
+}
+
+.profile-slider{
+    width: 102px;
+    text-align:center;
+}
+
+header{
+    justify-content: space-between;
+    /*background-color: rgb(195, 117, 117);*/
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    box-shadow: 0px 1px 5px rgb(162, 167, 170);
+    font-family: Noto serif;
+}
+.search {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.profilepic{
+    height: 50px;
+    margin: 0px;
+    display: flex;
+    justify-content: column;
+}
+
+.username{
+    text-align: center;
+    font-size: 12px;
+}
+.searchbar{
+    height: 40px;
+    width: 100%;
+    min-width: 200px;
+    max-width: 350px;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 2px solid rgb(195, 117, 117);
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color: rgb(247, 244, 245);
+    font-family: 'Roboto', sans-serif;
+}
+.searchbutton{
+    margin-right: 30px;
+    padding: 0 12px 0 12px;
+    height: 46px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: rgb(254, 152, 105);
+    border: 2px solid rgb(195, 117, 117);
+    display: flex;
+    border-left: none;
+    flex-direction: row;
+    align-items: center;
+}
+
+.poster-image img{
+    width: 1046px;
+    object-fit: contain;
+    border: 1px solid rgb(219, 179, 179);
+}
+.poster-image{
+    text-align: center;
+    height: 589px;
+}
+
+.details-to-apply{
+    width: 1046px;
+    margin-left: 126px;
+    border: 1px solid rgb(219, 179, 179);
+    border-top: none;
+}
+
+.name-of-event,
+.age-restriction,
+.time,
+.location,
+.remarks{
+   font-family: Noto serif;
+   font-size: 18px;
+   margin-bottom: 5px;
+   display:block;
+   padding-right: 5px;
+   padding-left: 5px;
+}
+
+.name-of-event{
+    padding-top: 5px;
+}
+
+.remarks{
+    margin-bottom: 15px;
+}
+
+.apply-button{
+    text-align: center;
+    margin-bottom: 5px;
+}
+.applyButton{
+    font-family: Noto serif;
+    border-radius: 12px;
+    border-style: solid;
+    font-size: 15px;
+    background-color: rgb(219, 179, 179);
+    transition: 0.25s;
+    cursor: pointer;
+    border-color: grey;
+    font-size: 20px;
+    text-align: center;
+}
+
+.applyButton:hover{
+    box-shadow: -1px 1.5px 2px rgb(103, 106, 108); 
+    opacity: 80%;
+}

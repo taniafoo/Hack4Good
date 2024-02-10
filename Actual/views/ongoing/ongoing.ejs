@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Big At Heart</title>
+    <link rel="stylesheet" href="./ongoing.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="ongoing.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-left"><img src="../images/big at heart logo.png" class="logo"></div>
+        <div class="header-right">
+            <p>Admin</p>
+        </div>
+        <div class="slider">
+            <span class="activity">Activity</span>
+            <a href="/admin/generate" style="text-decoration: none; color:black" class="generate">Generate</a>
+        </div>
+    </header>
+    <main>
+        <div class="activities-header">Activities</div>
+        <div class="activity-status">
+            <div class="right">
+                <a href="/admin/activity/completed" style="text-decoration: none; color:rgba(5, 25, 45, 0.2)">
+                    <h1 class="completed">Completed</h1>
+                </a>
+            </div>
+            <div class="middle">
+                <a href="/admin/activity/upcoming" style="text-decoration: none; color:rgba(5, 25, 45, 0.2)">
+                    <h1 class="upcoming">Upcoming</h2>
+                </a>
+
+            </div>
+            <div class="left">
+                <h1 class="ongoing">Ongoing</h3>
+            </div>
+            <div class="new">
+                <a href="/admin/activity/createnew" style="text-decoration: none; color:rgba(5, 25, 45, 0.2)">
+                    <h1 class="create-new">Create new</h1>
+                </a>
+            </div>
+        </div>
+
+        <div class="tablehead">
+            <div class="date">DATE</div>
+            <div class="name">NAME OF ACTIVITY</div>
+            <div class="registered">NO. OF REGISTERED</div>
+            <div class="attendees">NO. OF ATTENDEES</div>
+        </div>
+
+        <input type="hidden" id="rows" value="<%= locals.rows%>">
+
+        <div class="totalRow"></div>
+    </main>
+</body>
+
+<script>
+    document.querySelector(".totalRow").innerHTML = document.querySelector("#rows").value
+</script>

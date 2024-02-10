@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<head>
+    <title>login page</title>
+    <link rel="stylesheet" href="sign-up.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="signup.js"></script>
+</head>
+
+<body>
+    <form name="myForm" onsubmit="return validateForm()" method="post">
+        <div class="loginDiv">
+            <div class="detailsTitle">Sign up with us now!</div>
+            <div class="Full name">
+                <p>Username:</p>
+                <input placeholder="Your name" class="input" name="username">
+                <div class="errorNotice" id="username"></div>
+            </div>
+            <div class="E-mail">
+                <p>E-mail:</p>
+                <input placeholder="Your e-mail" class="input" name="email">
+                <div class="errorNotice" id="email"></div>
+            </div>
+
+            <div class="password">
+                <p>Password:</p>
+                <input placeholder="Your password" class="input" name="password">
+                <div class="errorNotice" id="password"></div>
+            </div>
+
+            <div class="password">
+                <p>Password (repeat):</p>
+                <input placeholder="Your password again" class="input1" name="passwordAgain">
+                <div class="errorNotice" id="passwordAgain"></div>
+            </div>
+
+            <div class="loginButtons">
+                    <button type="submit">Submit</button>
+                <p class="redirect">Already have an account?</p>
+                <a href="/login">
+                    <p class="login">Log in here</p>
+                </a>
+            </div>
+        </div>
+    </form>
+</body>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Big At Heart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../homepagelogged/homepage-login.css">
+</head>
+
+<body>
+    <header>
+        <div class="headerLeft">
+            <img src="../images/big at heart logo.png">
+        </div>
+        <div class="slider">
+            <span class="home">Home</span>
+            <a class="profile-slider" href="" id="link">Your profile</a>
+        </div>
+        <div class="search">
+            <input placeholder="Search" class="searchbar">
+            <button class="searchbutton">
+                <img src="../images/search-icon copy.png">
+            </button>
+        </div>
+
+        <div>
+            <div class="profilepic"><img src="../images/profile-icon-png-898.png"></div>
+            <div class="username" name="usernameN"></div>
+            <input type="hidden" id="hiddenuser" value="<%= locals.username %>" />
+        </div>
+    </header>
+
+    <main>
+        <div class="event-div">Our Events</div>
+        <div class="filter">
+            <p>Beneficiary groups</p>
+            <div class="beneficiaryCats"></div>
+        </div>
+        <div class="mainHomepage">
+            <div class="activities"></div>
+        </div>
+    </main>
+</body>
+
+<script>
+    document.querySelector(".username").innerHTML = document.querySelector("#hiddenuser").value;
+    let a = document.querySelector("#link");
+    a.setAttribute('href', `/profile/${document.querySelector("#hiddenuser").value}`);
+</script>
+
+<script src="../data/events.js"></script>
+<script src="../data/beneficiariesGrps.js"></script>
+<script src="../homepage.js"></script>

@@ -1,0 +1,98 @@
+html {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    margin:auto;
+    font-family: DM Sans;
+    background-color: hsl(27, 66%, 92%);
+    display: grid;
+    row-gap: 15px;
+}
+.loginDiv {
+    background-color: white;
+    font-family: Noto serif;
+    padding: 25px;
+    border-radius: 20px;
+    width: 500px;
+    height: contain;
+}
+.detailsTitle, 
+.loginButtons {
+    text-align: left;
+    font-family: Noto serif;
+}
+
+.detailsTitle{
+    height: 50px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.username,
+.password{
+    height: 60px;
+    margin-bottom: 7px;
+    font-size: 17px;
+}
+
+.inputUser,
+.inputPW{
+    height: 25px;
+    margin-bottom: 7px;
+    width: 100%;
+
+}
+p {
+    margin-bottom: 5px;
+    font-family: Noto serif;
+}
+.loginButtons {
+    margin-top: 20px;
+}
+.loginButtons button {
+    cursor: pointer;
+    border-color: grey;
+    font-size: 15px;
+    border-radius: 12px;
+    width: 80;
+    height: 30px;
+    border-style: solid;
+
+}
+
+button{
+    font-family: Noto serif;
+    background-color: rgb(219, 179, 179);
+    transition: 0.35s;
+}
+
+button:hover{
+    box-shadow: -1px 1.5px 2px rgb(103, 106, 108); 
+    opacity: 80%;
+}
+
+.log-in-button{
+    margin-bottom: 0px;
+    position: left;
+}
+
+.sign-up-button{
+    white-space: nowrap;
+    margin-bottom: none;
+    display: block;
+}
+
+.sign-up-button:hover{
+    text-decoration: underline;
+}
+
+a{
+    text-decoration: none;
+}
+
+

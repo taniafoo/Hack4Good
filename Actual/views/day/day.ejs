@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+<title>Big At Heart</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="day.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-left"><img src="../images/big at heart logo.png" class="logo"></div>
+        <div class="header-right"><p>Admin</p></div>
+        <div class="slider">
+            <a href="/admin/activity/completed" style="text-decoration: none; color:black" class="activity">Activity</a>
+            <span class="generate">Generate</span>
+        </div>
+    </header>
+    <main>
+        <div class="generate-header">Volunteering report</div>
+
+        <div class="generate-status">
+            <div class="right">
+                <a href="/admin/generate/age" style="text-decoration: none; color:rgba(5, 25, 45, 0.2)">
+                    <h1 class="age">Age</h1>
+                </a>
+            </div>
+
+            <div class="middle">
+                <a href="/admin/generate/area" style="text-decoration: none; color:rgba(5, 25, 45, 0.2)">
+                    <h1 class="area">Area</h1>
+                </a>
+            </div>
+            <div class="left">
+                <h1 class="day">Weekend/Weekday</h1>
+            </div>
+        </div>
+
+        <div class="tablehead">
+            <div class="wkday-wkend">WEEKDAY/WEEKEND</div>
+            <div class="volunteer-number">NO. OF VOLUNTEERS</div>
+            <div class="volunteer-hours">TOTAL NO. OF HOURS</div>
+        </div>
+
+        <div class="row">
+            <div class="wkday-wkend">weekday</div>
+            <div class="volunteer-no">328</div>
+            <div class="volunteer-hour">34</div> <!--note the use of volunteer-hour instead of volunteer-hours-->
+        </div>
+    </main>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<head>
+    <title>login page</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="login.js"></script>
+</head>
+
+<body>
+    <div class="loginDiv">
+        <div class="detailsTitle">Log in or sign up with us now!</div>
+        <form name="myForm" onsubmit="return validateForm()" method="post">
+            <div class="username">
+                <p>Username:</p>
+                <input placeholder="Username" class="inputUser" name="username">
+            </div>
+            <div class="password">
+                <p>Password:</p>
+                <input placeholder="Password" class="inputPW" name="password">
+            </div>
+            <div class="errorNotice"></div>
+            <div class="loginButtons">
+                <div>
+                    <button class="log-in-button" type="submit">Submit</button>
+                </div>
+                <input type="hidden" , name="state" , id="state" , value="<%= locals.state %>">
+        </form>
+        <div class="signup">
+            <a href="/signup">
+                <p class="sign-up-button">Sign up here!</p>
+            </a>
+        </div>
+    </div>
+    </div>
+</body>
+
+<script>
+    if (document.querySelector("#state").value == 1) {
+        document.querySelector(".errorNotice").innerHTML = "Invalid Credentials";
+    }
+</script>

@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Tania",
+        "age": 19,
+        "area": "north",
+        "participated": [
+            {
+                "eventName": "2023 Labour Day Charity Walk",
+                "status": "attended",
+                "hours": 32
+            }
+        ]
+    },
+    {
+        "name": "Ranen",
+        "age": 22,
+        "area": "west",
+        "participated": [
+            {
+                "eventName": "2023 Labour Day Charity Walk",
+                "status": "absent",
+                "hours": 34
+            }
+        ]
+    }
+]

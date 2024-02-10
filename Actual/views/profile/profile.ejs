@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>profile</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="headerLeft">
+            <img src="../images/big at heart logo.png">
+        </div>
+        <div class="slider">
+            <a href="" style="text-decoration: none; color: black;" id="link">
+                <span class="home">Home</span>
+            </a> 
+            <span class="profile-slider">Your profile</span>
+        </div>
+        <div class="search">
+            <input placeholder="Search" class="searchbar">
+            <button class="searchbutton">
+                <img src="../images/search-icon copy.png">
+            </button>
+        </div>
+
+        <div>
+            <div class="profilepic"><img src="../images/profile-icon-png-898.png"></div>
+            <div class="username"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="profHeader">
+            <img src="../images/profile-icon-png-898.png">
+            <div class="info">
+                <p>John tan</p>
+                <p>johntan@gmail.com</p>
+                <p>81679753</p>
+                <p>18</p>
+                <p>Total hours served: 81</p>
+            </div>
+            <div class="priInfo">
+
+
+            </div>
+        </div>
+        <div class="tabs">
+            <button class="profTab" onclick="tabs(event, 'details')">Your details</button>
+            <button class="profTab" onclick="tabs(event, 'upcoming')">Upcoming events</button>
+            <button class="profTab" onclick="tabs(event, 'completed')">Completed events</button>
+            <button class="profTab" onclick="tabs(event, 'signup')">Events sign up</button>
+        </div>
+        <div class="tabcontent" id="details"></div>
+        <div class="tabcontent" id="upcoming"></div>
+        <div class="tabcontent" id="completed"></div>
+        <div class="tabcontent" id="signup">
+            <form name="myForm" onsubmit="return validateForm()" method="post">
+                <div class="eventAddDiv">
+                    <select name="beneficiary" class="input">
+                        <option value="hi">helo</option>
+                    </select>
+
+                    <input type="hidden" id="rows" value="<%=locals.rows%>">
+
+                    <div class="apply-button">
+                        <a href="">
+                            <button class="applyButton">Apply now</button>
+                        </a>
+                    </div>
+                </div>
+            </form>
+
+            <input type="hidden" id="hiddenuser" value="<%=locals.profile%>">
+
+
+        </div>
+    </main>
+
+</body>
+<script src="../data/events.js"></script>
+<script src="john.js"></script>
+<script src="profile.js"></script>
+<script>
+    document.querySelector(".input").innerHTML = document.querySelector("#rows").value;
+</script>
+<script>
+    let a = document.querySelector("#link");
+    a.setAttribute('href', `/home/${document.querySelector("#hiddenuser").value}`);
+</script>
+
+</html>
